@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:padding="50dp"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:text="Text to Speech Converter"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#fff">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/tts"
+        android:paddingTop="20dp"
+        android:textColorHint="#bbb"
+        android:textColor="#fff"
+        android:drawablePadding="5dp"
+        android:textSize="19dp"
+        android:drawableStart="@drawable/ic_action_speak"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter text to be Spoken"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:maxLines="3"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:inputType="text"
+        android:ems="150"
+        android:layout_below="@+id/t1"></EditText>
+    <Button
+        android:id="@+id/bn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tts"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Speak Now"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:onClick="textToSpeech"
+        ></Button>
+    <Button
+        android:id="@+id/bn1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bn"
+        android:textColor="#000"
+        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Clear Text"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+
+        ></Button>
+
+</RelativeLayout>

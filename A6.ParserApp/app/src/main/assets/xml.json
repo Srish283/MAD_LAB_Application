@@ -1,0 +1,16 @@
+[
+  {
+  "city":"Delhi",
+  "latitude":"12.1",
+  "longitude":"72.4",
+  "humidity":"54%",
+  "temperature":"27"
+  },
+  {
+    "city":"Mumbai",
+    "latitude":"13.2",
+    "longitude":"77.3",
+    "humidity":"65%",
+    "temperature": "32"
+  }
+]

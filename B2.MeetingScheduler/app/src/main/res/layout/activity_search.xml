@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/meetwall"
+    android:layout_centerInParent="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:id="@+id/linear1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date:"
+            android:layout_margin="2dp"
+            android:paddingLeft="20dp"
+            android:textSize="24sp"
+            android:drawableStart="@drawable/ic_action_date"
+            android:drawablePadding="8dp"
+            android:paddingRight="5dp"
+            android:textColor="#fff"
+            android:id="@+id/textv1"
+            ></TextView>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:hint="dd/mm/yyyy"
+            android:textColorHint="#bbb"
+            android:id="@+id/key"
+            android:onClick="findDate"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="58dp"
+        android:paddingTop="30dp"
+
+        android:drawablePadding="4dp"
+        android:text="MEETING OF THE DAY"
+        android:drawableStart="@drawable/ic_action_name"
+        android:drawableEnd="@drawable/ic_action_name"
+        android:textColor="#dab0eb"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:id="@+id/text"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#dab0eb "
+        android:textSize="20sp"
+        android:id="@+id/textv2"></TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

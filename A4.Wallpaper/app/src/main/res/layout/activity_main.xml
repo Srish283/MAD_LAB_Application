@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the button to change wallpaper"
+        android:textSize="38sp"
+        android:gravity="center"
+        android:textColor="#3949AB"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textv" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Wallpaper"
+        android:layout_below="@id/textv"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#3949AB"
+        android:textColor="#fff"
+        android:id="@+id/button"
+        android:onClick="startWallpaper"></Button>
+
+</RelativeLayout>

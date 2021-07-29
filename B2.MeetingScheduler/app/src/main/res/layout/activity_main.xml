@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/meetwall"
+
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meeting Scheduler"
+        android:paddingTop="30dp"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt1"
+        android:layout_marginBottom="10dp"
+        android:textColor="#F08080"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt1"
+        android:src="@drawable/ic_meeting"
+        android:id="@+id/img"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mname"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_action_name"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:textColor="#fff"
+        android:hint="Enter Meeting Agenda"
+        android:textAlignment="center"
+        android:textColorHint="#bbb "
+        android:inputType="text"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/mdate"
+        android:layout_below="@+id/mname"
+        android:drawableStart="@drawable/ic_action_date"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:hint="Select Date..."
+        android:textColorHint="#bbb "
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtime"
+        android:layout_below="@+id/mdate"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:textColor="#fff"
+        android:hint="Select Time..."
+        android:textColorHint="#bbb"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_action_time"
+        android:inputType="text"></EditText>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtime"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button"
+        android:text="Add Details"
+        android:textSize="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="#000"
+        android:onClick="onClickAdd"
+        android:id="@+id/insert"></Button>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtime"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:layout_alignParentEnd="true"
+        android:onClick="onSearch"
+        android:text="Search"
+        android:textColor="#000"
+        android:textSize="22dp"></Button>
+
+</RelativeLayout>

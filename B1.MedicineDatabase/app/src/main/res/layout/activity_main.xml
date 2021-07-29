@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#A3E4D7"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Reminder"
+        android:paddingTop="30dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt1"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt1"
+        android:src="@drawable/ic_pills"
+        android:id="@+id/img"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mname"
+        android:layout_below="@+id/img"
+        android:drawableStart="@drawable/ic_action_name"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:hint="Enter Medicine Name"
+        android:textAlignment="center"
+        android:textColorHint="#0B5345 "
+        android:inputType="text"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mdate"
+        android:layout_below="@+id/mname"
+        android:drawableStart="@drawable/ic_action_date"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:hint="Select Date..."
+        android:textColorHint="#0B5345 "
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtime"
+        android:layout_below="@+id/mdate"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:hint="Select Time..."
+        android:textColorHint="#0B5345 "
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_action_time"
+        android:inputType="text"></EditText>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtime"
+        android:drawableStart="@drawable/ic_action_name"
+        android:padding="10dp"
+        android:paddingLeft="150dp"
+        android:textAlignment="textEnd"
+        android:textColor="#0B5345"
+        android:text="Choose Repeat"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"></TextView>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_toRightOf="@+id/select"
+        android:layout_marginTop="15dp"
+        android:entries="@array/menu_item"
+        android:paddingLeft="22dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/mtime"></Spinner>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="Save Details"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:id="@+id/insert"></Button>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="Show Details"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:id="@+id/showlist"></Button>
+
+</RelativeLayout>

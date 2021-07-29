@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Validating users</string>
+    <string name="name">Your Name</string>
+    <string name="email">Your Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Your Password</string>
+    <string name="phone">Your Phone </string>
+</resources>

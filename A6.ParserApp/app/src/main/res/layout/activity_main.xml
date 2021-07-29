@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/weather"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Data"
+        android:textColor="#1464B1"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"></TextView>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARSE XML"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:backgroundTint="#3498DB"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="parseXML"
+        >
+
+</Button>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARSE JSON"
+        android:textSize="20sp"
+        android:backgroundTint="#3498DB"
+        android:textColor="#fff"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:onClick="parseJSON"
+        android:layout_column="2">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/txtv2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/txtv1"
+        android:textColor="#000"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="15dp"
+        android:paddingRight="6dp"></TextView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MedicineDatabase</string>
+    <string-array name="menu_item">
+        <item>Everyday</item>
+        <item>Weekly</item>
+        <item>Twice a Day</item>
+        <item>Thrice a Day</item>
+    </string-array>
+</resources>

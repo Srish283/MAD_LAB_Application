@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<records>
+    <weather>
+        <city>Mangalore</city>
+        <latitude>13.82</latitude>
+        <longitude>79.56</longitude>
+        <humidity>80%</humidity>
+        <temperature>30</temperature>
+    </weather>
+    <weather>
+        <city>Bangalore</city>
+        <latitude>12.82</latitude>
+        <longitude>77.56</longitude>
+        <humidity>60%</humidity>
+        <temperature>26</temperature>
+    </weather>
+</records>
